@@ -51,7 +51,7 @@
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+            <a href="" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="static/assets/img/logo.png" alt=""> -->
                 <img src="static/assets/img/logo.png">
@@ -59,13 +59,13 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto" href="index.html#hero-animated">Accueil</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#about">A Propos</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#portfolio">Gallerie</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#team">Equipes</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">Nouvelles</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="#hero-animated">Accueil</a></li>
+                    <li><a class="nav-link scrollto" href="#about">A Propos</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#portfolio">Gallerie</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Equipes</a></li>
+                    <li><a class="nav-link scrollto" href="#recent-blog-posts">Nouvelles</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
             </nav><!-- .navbar -->
@@ -81,7 +81,7 @@
             <!-- <h2>BIENVENU <span>sur</span></h2> -->
             <h2>GROUP LUALABA SERVICE sarl</h2>
             <div class="d-flex">
-                <a href="#about" class="btn-get-started scrollto">DECOUVRER NOUS.</a>
+                <a href="#about" class="btn-get-started scrollto">NOUS DECOUVRIR!</a>
                 <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
         </div>

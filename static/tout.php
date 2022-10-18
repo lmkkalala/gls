@@ -292,9 +292,7 @@ blockquote span {
       <div class="blog-posts pt-5 pb-5">
         <div class="row">
 
-        <?php foreach ($news as $news_item):
-                          $str_titre_url=urlencode($news_item['post_titre']);
-                        ?>
+        <?php foreach ($news as $news_item):$str_titre_url=urlencode($news_item['post_titre']);?>
                               <div class="col-xl-4 col-lg-4 col-md-6 d-flex">
                                 <div class="blog-wrapper mb-30">
                                     <div class="blog-thumb mb-25">

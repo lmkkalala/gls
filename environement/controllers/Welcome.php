@@ -184,7 +184,7 @@ class Welcome extends CI_Controller {
 	
 
 
-        $this->load->view('tout', $data);
+        $this->load->view('c_tout', $data);
 	}
 
 }

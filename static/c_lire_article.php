@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -181,7 +178,7 @@
           <div class="col-lg-4">
             <div class="sidebar">
               <div class="sidebar-item recent-posts">
-                <h3 class="sidebar-title">Recent Posts</h3>
+                <h3 class="sidebar-title">Articles recents</h3>
                 <div class="mt-3">
 
                   <?php foreach ($news as $news_item) :
