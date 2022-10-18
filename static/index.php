@@ -70,7 +70,7 @@
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
             </nav><!-- .navbar -->
 
-            <a class="btn-getstarted scrollto" href="<?= base_url("login.jsp") ?>">Bienvenu<?php if ($this->auth->loggedin()) : ?> | Mon compte<?php endif; ?></a>
+            <a class="btn-getstarted scrollto" href="<?= base_url("login.jsp") ?>"><?php if ($this->auth->loggedin()) : echo "Mon compte"; else : echo "Bienvenu"; endif; ?></a>
 
         </div>
     </header><!-- End Header -->

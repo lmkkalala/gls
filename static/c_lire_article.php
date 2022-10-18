@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Group Lualaba Service sarl</title>
+  <title><?=$news_item['post_titre']?></title>
   <meta content="Group Lualaba Service sarl" name="description">
   <meta content="" name="keywords">
 
@@ -54,21 +54,22 @@
   <header id="header" class="header fixed-top" data-scrollto-offset="0">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+      <a href="<?=base_url()?>" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="text-warning fw-bold">GLS sarl<span>.</span></h1>
+        <!--h1 class="text-warning fw-bold">GLS sarl<span>.</span></h1-->
+        <img src="<?=base_url()?>static/assets/img/logo.png">
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html#hero-animated">Accueil</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">A Propos</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="index.html#portfolio">Gallerie</a></li>
-          <li><a class="nav-link scrollto" href="index.html#team">Equipes</a></li>
-          <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">Nouvelles</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="<?=base_url()?>#hero-animated">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="<?=base_url()?>#about">A Propos</a></li>
+          <li><a class="nav-link scrollto" href="<?=base_url()?>#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="<?=base_url()?>#portfolio">Gallerie</a></li>
+          <li><a class="nav-link scrollto" href="<?=base_url()?>#team">Equipes</a></li>
+          <li><a class="nav-link scrollto" href="<?=base_url()?>#recent-blog-posts">Nouvelles</a></li>
+          <li><a class="nav-link scrollto" href="<?=base_url()?>#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
@@ -106,7 +107,7 @@
 
             <article class="blog-details">
 
-              <div class="post-img">
+              <div class="post-img" style="overflow:hidden;">
                 <img src="<?= base_url('images/news-pic/' . $news_item['post_illustration']) ?>" alt="" class="img-fluid">
               </div>
 
@@ -116,11 +117,11 @@
                 <ul>
                   <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#"><strong><?= $news_item['post_owner'] ?></strong></a></li>
                   <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="<?= $news_item['post_date'] ?>"><?= $news_item['post_date'] ?></time></a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#"><?= $news_item['nombre_de_commentaire']; ?> Comments</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#"><?= $news_item['nombre_de_commentaire']; ?> commentaire(s)</a></li>
                 </ul>
               </div><!-- End meta top -->
 
-              <div class="content">
+              <div class="content" style="word-break: break-word; overflow:hidden;">
                 <?= $news_item['post_content'] ?>
               </div><!-- End post content -->
 
@@ -128,7 +129,7 @@
 
             <div class="comments">
 
-              <h4 class="comments-count"><?= $news_item['nombre_de_commentaire']; ?> Comments</h4>
+              <h4 class="comments-count"><?= $news_item['nombre_de_commentaire']; ?> commentaire(s)</h4>
 
               <?php foreach ($post_comment as $key => $comment) : ?>
                 <div id="comment-<?= $key ?>" class="comment">
@@ -157,14 +158,14 @@
                   <form action="<?= site_url('welcome/lire/' . $str_titre_url) ?>" class='form-horizontal' method="post">
                   <?php echo  '<div class="row">
                                   <div class="col-xl-12">
-                                    <textarea id="comments" name="message" cols="30" rows="10" class="form-control" placeholder="Votre commentaire...*"required></textarea>
-                                      <button class="btn blue-bg" type="submit">Envoyer</button>
+                                    <textarea id="comments" name="message" cols="30" rows="4" class="form-control" placeholder="Votre commentaire...*"required></textarea>
+                                      <button class="btn btn-danger my-3" style="background-color:var(--color-primary)" type="submit">Envoyer</button>
                                   </div>
                                 </div>
                               </form>';
                 } else {
                   echo '<p>
-                          <span class="text-warning">Pour repondre vous devez vous connecter</span>
+                          <span class="text-info">Pour repondre vous devez vous connecter</span>
                             <a href="' . base_url() . 'login">ici</a>
                         </p>
                     ';
