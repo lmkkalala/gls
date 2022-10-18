@@ -612,8 +612,8 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">
-                    <h2>Les Nouvelles</h2>
-                    <p></p>
+                    <h2>Les nouvelles</h2>
+                    <p><a href="<?=base_url('welcome/tout')?>" class="btn btn-danger" style="background-color:var(--color-primary)">Lire tout</a></p>
                 </div>
 
                 <div class="row">
