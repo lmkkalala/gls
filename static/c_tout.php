@@ -82,7 +82,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <h2>Les nouvelles</h2>
                     <ol>
-                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="<?=base_url()?>">Accueil</a></li>
                         <li>Nouvelles</li>
                     </ol>
                 </div>
