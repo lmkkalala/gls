@@ -229,6 +229,7 @@ $validation = $validation == 0 ? false : true;
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-3 ">
+                        <div class="text-center mb-5 text-dark"><a href="<?=base_url()?>"><img class="img-header" style="height:50px;" src="static/assets/img/logo.png"><br>Accueil</a></div>
                             <span class="profile-picture">
                                 <img class="editable img-responsive img-thumbnail mx-auto d-block" alt=" Avatar" id="avatar2" src="<?= base_url('images/profiles/' . $user_info['image']) ?>">
                                 <?php unset($user_info['image']) ?>
