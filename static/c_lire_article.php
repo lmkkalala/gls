@@ -71,7 +71,7 @@
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
 
-      <a class="btn-getstarted scrollto" href="index.html#about">Bienvenu</a>
+      <a class="btn-getstarted scrollto" href="<?= base_url("login.jsp") ?>"><?php if ($this->auth->loggedin()) : echo "Mon compte"; else : echo "Bienvenu"; endif; ?></a>
 
     </div>
   </header><!-- End Header -->
