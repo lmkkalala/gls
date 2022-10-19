@@ -85,8 +85,8 @@
         <div class="d-flex justify-content-between align-items-center">
           <h2>Nouvelles Detaillées</h2>
           <ol>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="blog.html">Nouvelles</a></li>
+            <li><a href="<?=base_url()?>">Accueil</a></li>
+            <li><a href="<?=base_url("welcome/tout")?>">Nouvelles</a></li>
             <li>Details</li>
           </ol>
         </div>
