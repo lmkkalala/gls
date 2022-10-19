@@ -4,40 +4,7 @@
 <html lang="en">
 
 <head>
-  <!-- Primary Meta Tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ITIG Don Bosco</title>
-    <meta name="description" content="L'Institut Technique Industrielle de Goma, une ecole d'excelence">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="<?=base_url("img/logo.png")?>">
-    <link rel="apple-touch-icon" href="img/logo.png">
-    <meta name="theme-color" content="#0081bc">
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#4287f5">
-<!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#0081bc">
-<!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#0081bc">
 
-
-    <meta name="title" content="ITIG Don Bosco ">
-    <meta name="description" content="L'Institut Technique Industrielle de Goma, une ecole d'excelence">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="<?=site_url()?>">
-    <meta property="og:title" content="ITIG Don Bosco">
-    <meta property="og:description" content="L'Institut Technique Industrielle de Goma, une ecole d'excelence">
-    <meta property="og:image" content="<?=base_url("img/logo.png")?>">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="<?=site_url()?>">
-    <meta property="twitter:title" content="ITIG Don Bosco ">
-    <meta property="twitter:description" content="L'Institut Technique Industrielle de Goma, une ecole d'excelence">
-    <meta property="twitter:image" content="<?=base_url("img/logo.png")?>">
 <style type="text/css">
     .preloader {
    position: absolute;
@@ -186,8 +153,6 @@ blockquote span {
 
 </style>
 
-
-  <title>ITIG Don Bosco</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?=css_url('dashboard/bootstrap.3.min');?>" rel="stylesheet" >
